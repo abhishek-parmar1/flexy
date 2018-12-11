@@ -1,4 +1,14 @@
 {
   "name": "@abhishek-parmar1/flexy",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "description": "A layout library based on flex.",
+  "license": "MIT",
+  "repository": "abhishek-parmar1/flexy",
+  "main": "index.js",
+  "keywords": [
+    "flexy",
+    "npm",
+    "package",
+    "abhishek-parmar1"
+  ]
 }
