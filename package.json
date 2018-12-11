@@ -1,14 +1,31 @@
 {
+  "_comment": "Todo: add autoprefixer",
   "name": "@abhishek-parmar1/flexy",
   "version": "2.0.0",
   "description": "A layout library based on flex.",
+  "style": "dist/flexboxgrid.css",
+  "main": "dist/flexboxgrid.css",
   "license": "MIT",
-  "repository": "abhishek-parmar1/flexy",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:abhishek-parmar1/flexy.git"
+  },
   "keywords": [
     "flexy",
     "npm",
     "package",
-    "abhishek-parmar1"
-  ]
+    "abhishek-parmar1",
+    "browser",
+    "flexbox",
+    "scss"
+  ],
+  "author": "abhishek-parmar1",
+  "scripts": {
+    "compressedScss": "node-sass --output-style compressed -o dist/flexy.min.css src/",
+    "uncompressedScss": "node-sass --output-style nested --indent-type tab --indent-width 2 -o dist/flexy.css src/",
+    "build:css": "npm run compressedScss && npm run uncompressedScss"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
