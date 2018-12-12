@@ -1,1 +1,4 @@
-@import "./breakpoints/all.scss";
+@import "variables";
+@import "./breakpoints/all";
+@import "./layout/all";
+@import "./trumps/all";

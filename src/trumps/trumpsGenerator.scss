@@ -1,0 +1,29 @@
+@if $build-xl-classes {
+  @include if-device(extra-large-device) {
+    @include auto-generate-flex-trumps($xl-flex-trumps, $xl-prefix);
+  }
+}
+
+@if $build-lg-classes {
+  @include if-device(large-device) {
+    @include auto-generate-flex-trumps($lg-flex-trumps, $lg-prefix);
+  }
+}
+
+@if $build-md-classes {
+  @include if-device(medium-device) {
+    @include auto-generate-flex-trumps($md-flex-trumps, $md-prefix);
+  }
+}
+
+@if $build-sm-classes {
+  @include if-device(small-device) {
+    @include auto-generate-flex-trumps($sm-flex-trumps, $sm-prefix);
+  }
+}
+
+@if $build-xs-classes {
+  @include if-device(extra-small-device) {
+    @include auto-generate-flex-trumps($xs-flex-trumps, $xs-prefix);
+  }
+}

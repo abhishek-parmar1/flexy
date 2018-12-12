@@ -1,0 +1,18 @@
+/******** mixin to generate the flex trumps ********/
+
+@mixin auto-generate-flex-trumps($values, $prefix: "") {
+  @each $val in $values {
+    .#{$prefix}l-row .#{$prefix}flex-#{$val} {
+      flex: 1 1 100%;
+      max-width: #{$val}% !important;
+      max-height: 100%;
+      box-sizing: border-box;
+    }
+    .#{$prefix}l-col .#{$prefix}flex-#{$val} {
+      flex: 1 1 100%;
+      max-height: #{$val}% !important;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
