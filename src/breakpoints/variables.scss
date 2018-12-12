@@ -1,0 +1,20 @@
+/********* min and max width of screens **********/
+
+/* extra large devices */
+$xl-min-width: 1920px !default;
+
+/* large devices */
+$lg-min-width: 1280px !default;
+$lg-max-width: 1919px !default;
+
+/* medium devices */
+$md-min-width: 960px !default;
+$md-max-width: 1279px !default;
+
+/* small devices */
+$sm-min-width: 600px !default;
+$sm-max-width: 959px !default;
+
+/* extra small devices */
+$xs-max-width: 599px !default;
+$xs-min-width: 320px !default;
