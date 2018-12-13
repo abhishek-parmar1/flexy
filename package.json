@@ -21,8 +21,8 @@
   ],
   "author": "abhishek-parmar1",
   "scripts": {
-    "compressedScss": "node-sass --output-style compressed  src/index.scss dist/flexy.min.scss ",
-    "uncompressedScss": "node-sass --output-style nested --indent-type tab --indent-width 2 src/index.scss dist/flexy.scss ",
+    "compressedScss": "node-sass --output-style compressed  src/index.scss dist/flexy.min.css ",
+    "uncompressedScss": "node-sass --output-style nested --indent-type tab --indent-width 2 src/index.scss dist/flexy.css ",
     "build:css": "npm run compressedScss && npm run uncompressedScss"
   },
   "devDependencies": {
