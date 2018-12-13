@@ -3,11 +3,11 @@
 @mixin auto-generate-flex-trumps($values, $prefix: "") {
   @each $val in $values {
     .#{$prefix}l-row .#{$prefix}flex-#{$val} {
-      max-width: #{$val}% !important;
+      max-width: percentage($val / 100);
       max-height: 100%;
     }
     .#{$prefix}l-col .#{$prefix}flex-#{$val} {
-      max-height: #{$val}% !important;
+      max-height: percentage($val / 100);
       max-width: 100%;
     }
     .#{$prefix}flex-#{$val} {
