@@ -8,6 +8,488 @@
 /* small devices */
 /* extra small devices */
 /******** mixin for creating breakpoints */
+/******** mixin to generate the layout ********/
+/******** for buliding classes *********/
+@media only screen and (min-width: 1920px) {
+		.xl-l-col .xl-flex,
+		.xl-l-row .xl-flex {
+				flex: 1 1 0%;
+				box-sizing: border-box; }
+		.xl-l-col {
+				display: flex;
+				flex-direction: column; }
+		.xl-l-row {
+				display: flex;
+				flex-direction: row; }
+		.xl-l-wrap {
+				flex-wrap: wrap; }
+		.xl-l-nowrap {
+				flex-wrap: nowrap; }
+		.xl-la-spbt-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-between; }
+		.xl-la-spbt-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-between; }
+		.xl-la-spbt-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-between; }
+		.xl-la-spbt-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-between; }
+		.xl-la-spar-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-around; }
+		.xl-la-spar-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-around; }
+		.xl-la-spar-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-around; }
+		.xl-la-spar-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-around; }
+		.xl-la-s-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-start; }
+		.xl-la-s-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-start; }
+		.xl-la-s-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-start; }
+		.xl-la-s-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-start; }
+		.xl-la-c-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: center; }
+		.xl-la-c-c {
+				align-items: center;
+				align-content: center;
+				justify-content: center; }
+		.xl-la-c-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: center; }
+		.xl-la-c-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: center; }
+		.xl-la-e-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-end; }
+		.xl-la-e-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-end; }
+		.xl-la-e-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-end; }
+		.xl-la-e-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-end; } }
+
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+		.lg-l-col .lg-flex,
+		.lg-l-row .lg-flex {
+				flex: 1 1 0%;
+				box-sizing: border-box; }
+		.lg-l-col {
+				display: flex;
+				flex-direction: column; }
+		.lg-l-row {
+				display: flex;
+				flex-direction: row; }
+		.lg-l-wrap {
+				flex-wrap: wrap; }
+		.lg-l-nowrap {
+				flex-wrap: nowrap; }
+		.lg-la-spbt-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-between; }
+		.lg-la-spbt-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-between; }
+		.lg-la-spbt-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-between; }
+		.lg-la-spbt-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-between; }
+		.lg-la-spar-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-around; }
+		.lg-la-spar-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-around; }
+		.lg-la-spar-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-around; }
+		.lg-la-spar-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-around; }
+		.lg-la-s-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-start; }
+		.lg-la-s-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-start; }
+		.lg-la-s-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-start; }
+		.lg-la-s-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-start; }
+		.lg-la-c-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: center; }
+		.lg-la-c-c {
+				align-items: center;
+				align-content: center;
+				justify-content: center; }
+		.lg-la-c-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: center; }
+		.lg-la-c-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: center; }
+		.lg-la-e-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-end; }
+		.lg-la-e-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-end; }
+		.lg-la-e-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-end; }
+		.lg-la-e-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-end; } }
+
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+		.md-l-col .md-flex,
+		.md-l-row .md-flex {
+				flex: 1 1 0%;
+				box-sizing: border-box; }
+		.md-l-col {
+				display: flex;
+				flex-direction: column; }
+		.md-l-row {
+				display: flex;
+				flex-direction: row; }
+		.md-l-wrap {
+				flex-wrap: wrap; }
+		.md-l-nowrap {
+				flex-wrap: nowrap; }
+		.md-la-spbt-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-between; }
+		.md-la-spbt-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-between; }
+		.md-la-spbt-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-between; }
+		.md-la-spbt-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-between; }
+		.md-la-spar-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-around; }
+		.md-la-spar-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-around; }
+		.md-la-spar-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-around; }
+		.md-la-spar-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-around; }
+		.md-la-s-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-start; }
+		.md-la-s-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-start; }
+		.md-la-s-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-start; }
+		.md-la-s-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-start; }
+		.md-la-c-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: center; }
+		.md-la-c-c {
+				align-items: center;
+				align-content: center;
+				justify-content: center; }
+		.md-la-c-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: center; }
+		.md-la-c-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: center; }
+		.md-la-e-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-end; }
+		.md-la-e-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-end; }
+		.md-la-e-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-end; }
+		.md-la-e-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-end; } }
+
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+		.sm-l-col .sm-flex,
+		.sm-l-row .sm-flex {
+				flex: 1 1 0%;
+				box-sizing: border-box; }
+		.sm-l-col {
+				display: flex;
+				flex-direction: column; }
+		.sm-l-row {
+				display: flex;
+				flex-direction: row; }
+		.sm-l-wrap {
+				flex-wrap: wrap; }
+		.sm-l-nowrap {
+				flex-wrap: nowrap; }
+		.sm-la-spbt-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-between; }
+		.sm-la-spbt-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-between; }
+		.sm-la-spbt-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-between; }
+		.sm-la-spbt-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-between; }
+		.sm-la-spar-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-around; }
+		.sm-la-spar-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-around; }
+		.sm-la-spar-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-around; }
+		.sm-la-spar-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-around; }
+		.sm-la-s-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-start; }
+		.sm-la-s-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-start; }
+		.sm-la-s-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-start; }
+		.sm-la-s-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-start; }
+		.sm-la-c-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: center; }
+		.sm-la-c-c {
+				align-items: center;
+				align-content: center;
+				justify-content: center; }
+		.sm-la-c-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: center; }
+		.sm-la-c-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: center; }
+		.sm-la-e-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-end; }
+		.sm-la-e-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-end; }
+		.sm-la-e-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-end; }
+		.sm-la-e-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-end; } }
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+		.xs-l-col .xs-flex,
+		.xs-l-row .xs-flex {
+				flex: 1 1 0%;
+				box-sizing: border-box; }
+		.xs-l-col {
+				display: flex;
+				flex-direction: column; }
+		.xs-l-row {
+				display: flex;
+				flex-direction: row; }
+		.xs-l-wrap {
+				flex-wrap: wrap; }
+		.xs-l-nowrap {
+				flex-wrap: nowrap; }
+		.xs-la-spbt-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-between; }
+		.xs-la-spbt-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-between; }
+		.xs-la-spbt-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-between; }
+		.xs-la-spbt-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-between; }
+		.xs-la-spar-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: space-around; }
+		.xs-la-spar-c {
+				align-items: center;
+				align-content: center;
+				justify-content: space-around; }
+		.xs-la-spar-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: space-around; }
+		.xs-la-spar-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-around; }
+		.xs-la-s-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-start; }
+		.xs-la-s-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-start; }
+		.xs-la-s-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-start; }
+		.xs-la-s-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-start; }
+		.xs-la-c-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: center; }
+		.xs-la-c-c {
+				align-items: center;
+				align-content: center;
+				justify-content: center; }
+		.xs-la-c-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: center; }
+		.xs-la-c-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: center; }
+		.xs-la-e-s {
+				align-items: flex-start;
+				align-content: flex-start;
+				justify-content: flex-end; }
+		.xs-la-e-c {
+				align-items: center;
+				align-content: center;
+				justify-content: flex-end; }
+		.xs-la-e-e {
+				align-items: flex-end;
+				align-content: flex-end;
+				justify-content: flex-end; }
+		.xs-la-e-st {
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: flex-end; } }
+
 /******** flex trumps for screens ********/
 /******** mixin to generate the flex trumps ********/
 /******** for buliding classes *********/
